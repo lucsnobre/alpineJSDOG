@@ -1,6 +1,6 @@
 # Alpine Dogs - Explorador de Raças de Cães
 
-![Alpine Dogs](./imgreadme/image.png)
+![Alpine Dogs](./imgreadme/fotosite.png)
 
 ---
 
