@@ -448,7 +448,7 @@ body {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(15px);
   border-radius: var(--border-radius-lg);
-  padding: 2rem;
+  padding: 0;
   box-shadow: var(--shadow-soft);
   border: 1px solid rgba(216, 222, 233, 0.3);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -486,6 +486,49 @@ body {
   opacity: 1;
 }
 
+.breed-preview-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+  position: relative;
+}
+
+.breed-preview-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(1px);
+  z-index: 1;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px) brightness(0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.breed-card:hover .preview-img {
+  transform: scale(1.05);
+  filter: blur(1px) brightness(0.9);
+}
+
+.breed-card:hover .breed-preview-image::after {
+  backdrop-filter: blur(0.5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.breed-card-content {
+  padding: 2rem;
+}
+
 .breed-card-header {
   display: flex;
   align-items: center;
@@ -508,6 +551,10 @@ body {
   border-radius: 50px;
   font-size: 0.75rem;
   font-weight: 600;
+}
+
+.breed-card-content .sub-breeds {
+  margin-bottom: 1rem;
 }
 
 .sub-breeds {
@@ -543,6 +590,15 @@ body {
 .breed-card-footer {
   padding-top: 1rem;
   border-top: 1px solid rgba(216, 222, 233, 0.3);
+}
+
+/* Ajuste para cards sem imagem prévia */
+.breed-card:not(:has(.breed-preview-image)) {
+  padding: 2rem;
+}
+
+.breed-card:not(:has(.breed-preview-image)) .breed-card-header {
+  margin-bottom: 1rem;
 }
 
 .view-photos {

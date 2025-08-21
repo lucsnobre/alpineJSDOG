@@ -97,24 +97,29 @@
                     <div class="breeds-grid">
                         <template x-for="breed in filteredBreeds" :key="breed.name">
                             <div class="breed-card" @click="selectBreed(breed.name)">
-                                <div class="breed-card-header">
-                                    <h3 x-text="breed.name" class="breed-name"></h3>
-                                    <div class="breed-badge" x-show="breed.subBreeds.length > 0">
-                                        <span x-text="breed.subBreeds.length"></span>
-                                    </div>
+                                <div class="breed-preview-image" x-show="previewImages[breed.name]">
+                                    <img :src="previewImages[breed.name]" :alt="breed.name" class="preview-img">
                                 </div>
-                                <div x-show="breed.subBreeds.length > 0" class="sub-breeds">
-                                    <div class="sub-breeds-list">
-                                        <template x-for="subBreed in breed.subBreeds.slice(0, 3)" :key="subBreed">
-                                            <span x-text="subBreed" class="sub-breed-tag"></span>
-                                        </template>
-                                        <span x-show="breed.subBreeds.length > 3" class="sub-breed-more">
-                                            +<span x-text="breed.subBreeds.length - 3"></span>
-                                        </span>
+                                <div class="breed-card-content">
+                                    <div class="breed-card-header">
+                                        <h3 x-text="breed.name" class="breed-name"></h3>
+                                        <div class="breed-badge" x-show="breed.subBreeds.length > 0">
+                                            <span x-text="breed.subBreeds.length"></span>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="breed-card-footer">
-                                    <span class="view-photos">Ver fotos →</span>
+                                    <div x-show="breed.subBreeds.length > 0" class="sub-breeds">
+                                        <div class="sub-breeds-list">
+                                            <template x-for="subBreed in breed.subBreeds.slice(0, 3)" :key="subBreed">
+                                                <span x-text="subBreed" class="sub-breed-tag"></span>
+                                            </template>
+                                            <span x-show="breed.subBreeds.length > 3" class="sub-breed-more">
+                                                +<span x-text="breed.subBreeds.length - 3"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="breed-card-footer">
+                                        <span class="view-photos">Ver fotos →</span>
+                                    </div>
                                 </div>
                             </div>
                         </template>

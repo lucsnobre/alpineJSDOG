@@ -7,6 +7,7 @@ function dogApp() {
         selectedBreed: null,
         breedImage: null,
         loadingImage: false,
+        previewImages: {},
 
         // Initialize the app
         init() {
@@ -36,6 +37,9 @@ function dogApp() {
                     name: breed,
                     subBreeds: subBreeds
                 }));
+                
+                // Fetch preview images for each breed
+                await this.fetchPreviewImages();
                 
                 this.loading = false;
             } catch (error) {
@@ -93,6 +97,27 @@ function dogApp() {
                 this.loadingImage = false;
                 // You could show an error message here if needed
             }
+        },
+
+        // Fetch preview images for all breeds
+        async fetchPreviewImages() {
+            const promises = this.breeds.map(async (breed) => {
+                try {
+                    const response = await fetch(`https://dog.ceo/api/breed/${breed.name}/images/random`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        if (data.status === 'success') {
+                            this.previewImages[breed.name] = data.message;
+                        }
+                    }
+                } catch (error) {
+                    console.error(`Erro ao buscar imagem prévia para ${breed.name}:`, error);
+                    // Se falhar, não adiciona imagem prévia para esta raça
+                }
+            });
+            
+            // Aguarda todas as requisições terminarem (mesmo as que falharam)
+            await Promise.allSettled(promises);
         },
 
         // Close the modal
