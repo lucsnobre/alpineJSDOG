@@ -13,13 +13,14 @@
 </head>
 <body>
     <div class="app" x-data="dogApp()">
-        <!-- Main Container -->
+  
         <div class="main-container">
-            <!-- Header -->
+            
             <header class="header">
                 <div class="container">
                     <div class="header-content">
                         <div class="brand">
+                            <img src="./imgreadme/alpine-logo.png" alt="Alpine.js Logo" width="32" height="32" style="margin-right: 12px;">
                             <h1>Alpine Dogs</h1>
                         </div>
                         <a href="https://github.com/lucsnobre/alpineJSDOG" target="_blank" class="social-link">
@@ -31,10 +32,10 @@
                 </div>
             </header>
 
-            <!-- Hero Section -->
+            
             <section class="hero">
                 <div class="hero-background">
-                    <!-- Background image will be added here -->
+                    
                 </div>
                 <div class="container">
                     <div class="hero-content">
@@ -57,19 +58,19 @@
                 </div>
             </section>
 
-            <!-- Loading State -->
+            
             <div x-show="loading" class="loading-state">
                 <div class="spinner"></div>
                 <p>Carregando raças de cães...</p>
             </div>
 
-            <!-- Error State -->
+            
             <div x-show="error" class="error-state">
                 <div class="error-icon">⚠️</div>
                 <p x-text="error"></p>
             </div>
 
-            <!-- Search Section -->
+            
             <div x-show="!loading && !error" class="search-section" id="bichos">
                 <div class="container">
                     <div class="search-container">
@@ -91,7 +92,7 @@
                 </div>
             </div>
 
-            <!-- Breeds Grid -->
+            
             <div x-show="!loading && !error" class="breeds-section">
                 <div class="container">
                     <div class="breeds-grid">
@@ -128,7 +129,7 @@
             </div>
         </div>
 
-        <!-- Modal -->
+        
         <div x-show="selectedBreed" class="modal-overlay" @click="closeModal()" x-transition>
             <div class="modal" @click.stop x-transition>
                 <div class="modal-header">

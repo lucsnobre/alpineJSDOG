@@ -79,6 +79,11 @@ body {
   padding: 1.5rem 0;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+}
+
 .brand h1 {
   font-size: 1.5rem;
   font-weight: 600;
