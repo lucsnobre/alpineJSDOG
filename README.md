@@ -1,61 +1,39 @@
-# Alpine Dogs - Explorador de Raças de Cães
-
 ![Alpine Dogs](./imgreadme/fotosite.png)
 
+  </a>
+</p>
+
 ---
+
 
 ## Sobre 
 
-**Alpine Dogs** é uma aplicação web moderna que permite explorar centenas de raças de cães com imagens reais. O site utiliza a [Dog CEO API](https://dog.ceo/dog-api/) para buscar informações sobre diferentes raças e suas sub-raças, proporcionando uma experiência interativa e educativa.
+O site **Alpine Dogs** é uma aplicação web com design moderno que permite explorar centenas de raças de cães com imagens reais. O site utiliza a [Dog CEO API](https://dog.ceo/dog-api/) para buscar informações sobre diferentes raças e suas sub-raças, proporcionando uma experiência interativa e educativa.
 
-O objetivo principal deste projeto é demonstrar o poder e simplicidade do **Alpine.js** - um framework JavaScript minimalista que permite criar interfaces reativas sem a complexidade de frameworks maiores como React ou Vue.js.
-
----
-
-## 🚀 Tecnologias Utilizadas
-
-- **HTML5** - Estrutura semântica da aplicação
-- **CSS3** - Estilização moderna com CSS Grid, Flexbox e variáveis CSS
-- **JavaScript (ES6+)** - Lógica da aplicação e consumo de API
-- **Alpine.js** - Framework reativo para interatividade
-- **Inter Font** - Tipografia moderna do Google Fonts
-- **Dog CEO API** - API REST para dados de raças de cães
-- **Markdown** - Documentação do projeto
+O objetivo da aplicação é o uso da framework Alpine.JS, que permite e garante maior interação, otimização e praticidade ao projeto.
 
 ---
 
-## 🎯 O que é Alpine.js?
+## Tecnologias utilizadas no projeto
 
-Alpine.js é um framework JavaScript leve (apenas 15kb) que oferece a reatividade e funcionalidades declarativas de frameworks maiores, mas com a simplicidade de usar diretamente no HTML. É perfeito para adicionar comportamento interativo a sites sem a necessidade de um processo de build complexo.
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,alpinejs,github)](https://skillicons.dev)
+
+---
+
+## O que é a framework Alpine.js?
+
+Alpine.js é um framework JavaScript leve (usa apenas 15kb) que oferece a reatividade e funcionalidades declarativas de frameworks maiores, mas com a simplicidade de usar diretamente no HTML. É perfeito para adicionar comportamento interativo a sites sem a necessidade de um processo de build complexo, como o utilizado no React.
 
 ### Principais características:
-- ✅ **Leve**: Apenas 15kb minificado
-- ✅ **Sem build**: Funciona diretamente no navegador
-- ✅ **Reativo**: Atualizações automáticas da interface
-- ✅ **Declarativo**: Lógica diretamente no HTML
-- ✅ **Fácil de aprender**: Sintaxe similar ao Vue.js
+-  **Leve**: Apenas 15kb minificado
+-  **Sem build**: Funciona diretamente no navegador
+-  **Reativo**: Atualizações automáticas da interface
+-  **Declarativo**: Lógica diretamente no HTML
+-  **Fácil de aprender**: Sintaxe similar ao Vue.js
 
----
+--
 
-## 📋 Pré-requisitos
-
-Antes de começar, você precisa ter instalado em sua máquina:
-
-### Para iniciantes absolutos:
-
-1. **Um navegador web** (Chrome, Firefox, Edge, Safari)
-2. **Um editor de código** - Recomendamos:
-   - [Visual Studio Code](https://code.visualstudio.com/) (gratuito)
-   - [Sublime Text](https://www.sublimetext.com/)
-   - [Atom](https://atom.io/)
-
-### Opcional (para desenvolvimento avançado):
-- [Git](https://git-scm.com/) - Para controle de versão
-- [Node.js](https://nodejs.org/) - Para ferramentas de desenvolvimento
-
----
-
-## 🛠️ Como usar este projeto
+## Como experimentar o projeto
 
 ### Método 1: Download direto (Mais fácil para iniciantes)
 
@@ -89,7 +67,7 @@ xdg-open index.html # Linux
 
 ---
 
-## 📖 Tutorial Alpine.js - Do Zero ao Herói
+## Tutorial de uso Alpine.js 
 
 ### 1. Incluindo Alpine.js no seu projeto
 
