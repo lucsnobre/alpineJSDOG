@@ -31,7 +31,7 @@ Alpine.js é um framework JavaScript leve (usa apenas 15kb) que oferece a reativ
 -  **Declarativo**: Lógica diretamente no HTML
 -  **Fácil de aprender**: Sintaxe similar ao Vue.js
 
---
+---
 
 ## Como experimentar o projeto
 
