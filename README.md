@@ -51,18 +51,14 @@ Alpine.js é um framework JavaScript leve (usa apenas 15kb) que oferece a reativ
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/alpine-dogs.git
+git clone https://github.com/lucsnobre/alpineJSDOG
 
 # Entre na pasta do projeto
-cd alpine-dogs
+cd alpineJSDOG
 
 # Abra no seu editor de código
-code .
+code . ou com Live Server
 
-# Ou abra diretamente no navegador
-start index.html  # Windows
-open index.html   # Mac
-xdg-open index.html # Linux
 ```
 
 ---
