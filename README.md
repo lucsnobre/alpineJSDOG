@@ -35,7 +35,7 @@ Alpine.js é um framework JavaScript leve (usa apenas 15kb) que oferece a reativ
 
 ## Como experimentar o projeto
 
-### Método 1: Download direto (Mais fácil para iniciantes)
+### Download direto (Mais fácil)
 
 1. **Baixe os arquivos**:
    - Clique no botão verde "Code" no GitHub
@@ -47,7 +47,7 @@ Alpine.js é um framework JavaScript leve (usa apenas 15kb) que oferece a reativ
    - Clique duas vezes no arquivo `index.html`
    - O site abrirá no seu navegador padrão
 
-### Método 2: Usando Git (Para desenvolvedores)
+### Usando Git 
 
 ```bash
 # Clone o repositório
